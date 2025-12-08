@@ -1,7 +1,37 @@
 """
 Module 1 — Variables and Data Types
-Comprehensive examples of Python variable types used for learning and practice.
-Author: Peyman (2025)
+File: Variables_Examples.py
+
+Purpose
+-------
+This script belongs to the Learning_Python_2025 project (Module 1).
+It is a *reference file* that shows how many different kinds of
+Python values can be stored in variables:
+
+- Basic data types (int, float, str, bool, NoneType)
+- Collections (list, tuple, dict, set, frozenset)
+- Numeric variants (complex)
+- Byte types (bytes, bytearray, memoryview)
+- Ranges, functions, modules, custom classes/objects
+- Files, generators, iterators, coroutines, context managers
+- Enumerations, named tuples, data classes, frozen data classes
+- Regular expressions, lambda functions, partial functions
+- Decorators, class/staticmethods, properties, exceptions
+- Slice objects, ellipsis, type objects, and id() values
+
+Ranking System for the Examples
+-------------------------------
+Rank 1 — Beginner      : Very basic, first contact with the concept.
+Rank 2 — Easy          : Still simple, but introduces a bit more thinking.
+Rank 3 — Intermediate  : Realistic, slightly more complex patterns.
+Rank 4 — Advanced      : Closer to production-style or more abstract ideas.
+Rank 5 — Professional  : Power-user features and deeper Python internals.
+# -----------------------------------------------------------
+Author: Peyman Miyandashti
+ID Number: 250161
+Date of Birth: 11/11/1983
+Year: 2025
+# -----------------------------------------------------------
 """
 
 import math
@@ -14,7 +44,7 @@ from collections import namedtuple
 from dataclasses import dataclass
 
 # -----------------------------------------------------------
-# 1. Basic Data Types
+# 1. Basic Data Types  (Rank 1 — Beginner)
 # -----------------------------------------------------------
 
 # Integer
@@ -39,7 +69,7 @@ print("NoneType:", nothing, type(nothing))
 
 
 # -----------------------------------------------------------
-# 2. Collections (Lists, Tuples, Dicts, Sets)
+# 2. Collections (Lists, Tuples, Dicts, Sets)  (Rank 1 — Beginner)
 # -----------------------------------------------------------
 
 # List
@@ -64,7 +94,7 @@ print("FrozenSet:", immutable_numbers, type(immutable_numbers))
 
 
 # -----------------------------------------------------------
-# 3. Numeric Variant
+# 3. Numeric Variant  (Rank 2 — Easy)
 # -----------------------------------------------------------
 
 # Complex number
@@ -73,7 +103,7 @@ print("Complex:", complex_number, type(complex_number))
 
 
 # -----------------------------------------------------------
-# 4. Byte-related Types
+# 4. Byte-related Types  (Rank 3 — Intermediate)
 # -----------------------------------------------------------
 
 # Bytes (immutable)
@@ -90,7 +120,7 @@ print("Memoryview:", memory_view_var, type(memory_view_var))
 
 
 # -----------------------------------------------------------
-# 5. Range Type
+# 5. Range Type  (Rank 2 — Easy)
 # -----------------------------------------------------------
 
 number_range = range(0, 10)
@@ -98,7 +128,7 @@ print("Range:", number_range, type(number_range))
 
 
 # -----------------------------------------------------------
-# 6. Functions as Variables
+# 6. Functions as Variables  (Rank 2 — Easy)
 # -----------------------------------------------------------
 
 def greet():
@@ -110,7 +140,7 @@ print("Function as variable:", greeting_function(), type(greeting_function))
 
 
 # -----------------------------------------------------------
-# 7. Modules as Variables
+# 7. Modules as Variables  (Rank 2 — Easy)
 # -----------------------------------------------------------
 
 math_module = math
@@ -118,7 +148,7 @@ print("Module:", math_module, type(math_module))
 
 
 # -----------------------------------------------------------
-# 8. Custom Classes and Objects
+# 8. Custom Classes and Objects  (Rank 3 — Intermediate)
 # -----------------------------------------------------------
 
 class Car:
@@ -135,7 +165,7 @@ print("Custom Object:", my_car, type(my_car))
 
 
 # -----------------------------------------------------------
-# 9. Files as Variables
+# 9. Files as Variables  (Rank 3 — Intermediate)
 # -----------------------------------------------------------
 
 # Note: Using a context manager to open/close the file safely.
@@ -152,7 +182,7 @@ except Exception as e:
 
 
 # -----------------------------------------------------------
-# 10. Generators
+# 10. Generators  (Rank 3 — Intermediate)
 # -----------------------------------------------------------
 
 def count_up_to(n: int):
@@ -168,7 +198,7 @@ print("Generator values:", list(counter))
 
 
 # -----------------------------------------------------------
-# 11. Iterators
+# 11. Iterators  (Rank 3 — Intermediate)
 # -----------------------------------------------------------
 
 iterator = iter([1, 2, 3])
@@ -177,7 +207,7 @@ print("Iterator values:", list(iterator))
 
 
 # -----------------------------------------------------------
-# 12. Coroutines (Async)
+# 12. Coroutines (Async)  (Rank 3 — Intermediate)
 # -----------------------------------------------------------
 
 async def async_example():
@@ -197,7 +227,7 @@ except RuntimeError:
 
 
 # -----------------------------------------------------------
-# 13. Context Managers
+# 13. Context Managers  (Rank 3 — Intermediate)
 # -----------------------------------------------------------
 
 @contextmanager
@@ -212,7 +242,7 @@ with simple_context() as ctx:
 
 
 # -----------------------------------------------------------
-# 14. Enumerations
+# 14. Enumerations  (Rank 3 — Intermediate)
 # -----------------------------------------------------------
 
 class Color(Enum):
@@ -226,7 +256,7 @@ print("Enum:", favorite_color, type(favorite_color))
 
 
 # -----------------------------------------------------------
-# 15. Named Tuple
+# 15. Named Tuple  (Rank 3 — Intermediate)
 # -----------------------------------------------------------
 
 Point = namedtuple("Point", ["x", "y"])
@@ -236,7 +266,7 @@ print("NamedTuple:", p, type(p))
 
 
 # -----------------------------------------------------------
-# 16. DataClass
+# 16. DataClass  (Rank 3 — Intermediate)
 # -----------------------------------------------------------
 
 @dataclass
@@ -250,7 +280,7 @@ print("DataClass:", pd, type(pd))
 
 
 # -----------------------------------------------------------
-# 17. Frozen DataClass
+# 17. Frozen DataClass  (Rank 3 — Intermediate)
 # -----------------------------------------------------------
 
 @dataclass(frozen=True)
@@ -264,7 +294,7 @@ print("Frozen DataClass:", pfd, type(pfd))
 
 
 # -----------------------------------------------------------
-# 18. A Few Extra Variable Tricks
+# 18. A Few Extra Variable Tricks  (Rank 4 — Advanced)
 # -----------------------------------------------------------
 
 # Multiple assignment
@@ -281,7 +311,7 @@ print("Dynamic var (list):", dynamic_var, type(dynamic_var))
 
 
 # -----------------------------------------------------------
-# 19. Regular Expressions
+# 19. Regular Expressions  (Rank 4 — Advanced)
 # -----------------------------------------------------------
 
 # Compiled regex pattern as a variable
@@ -294,7 +324,7 @@ print("Regex match:", match.group() if match else None)
 
 
 # -----------------------------------------------------------
-# 20. Lambda Functions
+# 20. Lambda Functions  (Rank 4 — Advanced)
 # -----------------------------------------------------------
 
 square = lambda n: n * n
@@ -305,7 +335,7 @@ print("Lambda add_two_numbers(2, 3):", add_two_numbers(2, 3))
 
 
 # -----------------------------------------------------------
-# 21. Partial Functions
+# 21. Partial Functions  (Rank 4 — Advanced)
 # -----------------------------------------------------------
 
 def multiply(a, b, c):
@@ -320,7 +350,7 @@ print("Partial function result:", result_partial)
 
 
 # -----------------------------------------------------------
-# 22. Decorators as Variables
+# 22. Decorators as Variables  (Rank 4 — Advanced)
 # -----------------------------------------------------------
 
 def debug(func):
@@ -343,7 +373,7 @@ print("Decorated add_numbers(2, 3):", add_numbers(2, 3))
 
 
 # -----------------------------------------------------------
-# 23. Class Methods and Static Methods
+# 23. Class Methods and Static Methods  (Rank 4 — Advanced)
 # -----------------------------------------------------------
 
 class MathUtils:
@@ -366,7 +396,7 @@ print("Static method variable:", static_method_var(5, 7), type(static_method_var
 
 
 # -----------------------------------------------------------
-# 24. Property Objects
+# 24. Property Objects  (Rank 4 — Advanced)
 # -----------------------------------------------------------
 
 class Rectangle:
@@ -388,7 +418,7 @@ print("Rectangle.area property object:", area_property_obj, type(area_property_o
 
 
 # -----------------------------------------------------------
-# 25. Exception Objects
+# 25. Exception Objects  (Rank 5 — Professional)
 # -----------------------------------------------------------
 
 try:
@@ -400,7 +430,7 @@ print("Exception object:", exception_obj, type(exception_obj))
 
 
 # -----------------------------------------------------------
-# 26. Slice Objects
+# 26. Slice Objects  (Rank 5 — Professional)
 # -----------------------------------------------------------
 
 slice_obj = slice(0, 5, 2)
@@ -412,7 +442,7 @@ print("Sliced numbers:", sliced_numbers)
 
 
 # -----------------------------------------------------------
-# 27. Ellipsis Object (...)
+# 27. Ellipsis Object (...)  (Rank 5 — Professional)
 # -----------------------------------------------------------
 
 ellipsis_obj = ...
@@ -420,7 +450,7 @@ print("Ellipsis object:", ellipsis_obj, type(ellipsis_obj))
 
 
 # -----------------------------------------------------------
-# 28. Type Objects (classes as values)
+# 28. Type Objects (classes as values)  (Rank 5 — Professional)
 # -----------------------------------------------------------
 
 int_type = int
@@ -433,7 +463,7 @@ print("Type object list_type:", list_type, type(list_type))
 
 
 # -----------------------------------------------------------
-# 29. Memory Address via id()
+# 29. Memory Address via id()  (Rank 5 — Professional)
 # (Not a type, but id() result can be stored in a variable)
 # -----------------------------------------------------------
 
