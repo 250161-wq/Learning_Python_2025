@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "amount": 50.0,
+    "category": "Food",
+    "description": "Groceries",
+    "date": "2025-12-08",
+    "timestamp": "2025-12-08T01:09:02.017341"
+  },
+  {
+    "id": 2,
+    "amount": 100.0,
+    "category": "Transport",
+    "description": "Gas",
+    "date": "2025-12-08",
+    "timestamp": "2025-12-08T01:09:02.017442"
+  },
+  {
+    "id": 3,
+    "amount": 30.0,
+    "category": "Food",
+    "description": "Restaurant",
+    "date": "2025-12-08",
+    "timestamp": "2025-12-08T01:09:02.017565"
+  },
+  {
+    "id": 4,
+    "amount": 75.0,
+    "category": "Entertainment",
+    "description": "Movie and dinner",
+    "date": "2025-12-08",
+    "timestamp": "2025-12-08T01:09:02.017793"
+  }
+]

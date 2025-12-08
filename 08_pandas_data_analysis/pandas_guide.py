@@ -315,7 +315,7 @@ def demonstrate_missing_data():
     
     # Forward fill
     print("\nForward fill:")
-    print(df.fillna(method='ffill'))
+    print(df.ffill())
     
     print()
 
