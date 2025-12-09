@@ -1,62 +1,77 @@
-Module X — [Module Title]
+Module 1 — Variables & Data Types
 
-This module focuses on [short description of the topic], providing a structured and practical introduction that builds upon previous concepts in the learning path.
+This module introduces the foundations of Python.
+Here I learn how Python stores information, how variables work, and how different data types behave when I use them in real code.
 
-Key Learning Objectives
+In this module I work on:
 
-By completing this module, I will be able to:
+Understanding what a variable is and how to create one.
 
-Objective 1
+Learning how to store numbers, text, and logical values.
 
-Objective 2
+Practicing the most common Python data types:
 
-Objective 3
+int — whole numbers
 
-Additional objectives depending on topic…
+float — decimal numbers
 
-Module File Structure
+str — text
 
-X_Notes.py
-Comprehensive explanations and annotated examples covering all essential concepts.
+bool — True/False
 
-X_Examples.py
-Executable, scenario-driven examples demonstrating correct and professional usage.
+Collections: list, tuple, dict, set
 
-X_Tasks.py
-A progressive set of exercises designed for hands-on practice.
-This file should be completed without reviewing the solutions.
+Writing clear, readable code with good naming practices.
 
-X_Tasks_Solutions.py
-Official solutions written using clean, professional coding standards.
-Intended for comparison and refinement after solving the tasks.
+Solving exercises that gradually increase in difficulty, from beginner to more realistic and professional-style examples.
 
-Exercise Difficulty Framework (Ranking System)
+Files included in this module
 
-Exercises are organized into five levels to support incremental skill development:
+Variables_Notes.py
+Detailed explanations of each concept with short, simple examples.
+
+Variables_Examples.py
+Practical examples that show how variables and data types are used in everyday Python code.
+
+Variables_Tasks.py
+A collection of exercises for me to solve on my own.
+
+Variables_Tasks_Solutions.py
+Clean, well-written solutions that I can compare against my work to improve my coding style.
+
+Difficulty Levels (Ranking System)
+
+The exercises are organized into levels to help me progress step by step:
 
 Rank 1 – Beginner
-Foundational exercises focused on basic operations and syntax.
+Very simple exercises to get started.
 
 Rank 2 – Easy
-Slightly more complex tasks combining fundamental concepts.
+Slightly more combined ideas, but still straightforward.
 
 Rank 3 – Intermediate
-Multi-step exercises requiring structured reasoning.
+Longer problems that require more reasoning.
 
 Rank 4 – Advanced
-Realistic scenarios and problem patterns commonly found in practical work.
+Exercises similar to what I might find in real projects.
 
 Rank 5 – Professional
-High-quality tasks emphasizing clarity, organization, and production-style practices.
+More polished and structured code, written in a production-style way.
 
-Learners may progress through the ranks at their own pace.
+I can move through the ranks at my own pace — no need to complete everything in one session.
 
-Recommended Study Workflow
+How to study this module
 
-Review conceptual explanations in X_Notes.py.
+Recommended order:
 
-Execute and analyze the practical samples in X_Examples.py.
+Read Variables_Notes.py
 
-Complete all exercises in X_Tasks.py.
+Run and explore Variables_Examples.py
 
-Compare and refine your work using X_Tasks_Solutions.py.
+Solve the tasks in Variables_Tasks.py
+
+Review and compare with Variables_Tasks_Solutions.py
+
+Once I feel confident with everything here, I move on to:
+
+➡️ 02-loops (the next module in the learning path)
