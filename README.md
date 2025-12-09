@@ -9,3 +9,13 @@ This project includes progressive exercises, mini-projects, and real-world appli
 
 # ✔️ Variables  
 # Understanding how to store, modify, and work with data.
+
+
+---
+
+# Module 1 — Variables and Data Types
+
+The detailed notes, examples, tasks, and solutions for this module will be stored in the folder:
+
+01-variables-and-data-types/01-variables-and-data-types/
+
