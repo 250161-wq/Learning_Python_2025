@@ -1,21 +1,34 @@
-# Learning_Python_2025  📖
+# Learning_Python_2025 📖
+
 A modern, structured, and hands-on repository designed to document my journey learning Python throughout 2025.  
 This project includes progressive exercises, mini-projects, and real-world applications to build strong foundations in programming and data analysis.
 
 ---
 
-# Topics Covered:
-# This repository will explore Python step by step, including:
+# Topics Covered
+This repository will explore Python step by step, including:
 
-# ✔️ Variables  
-# Understanding how to store, modify, and work with data.
-
+✔️ Variables  
+✔️ Data Types  
+✔️ Loops  
+✔️ Functions  
+✔️ Working With Files  
+✔️ Working With APIs  
+✔️ JSON  
+✔️ Pandas + Data Analysis  
+✔️ Plotting Graphs  
+✔️ Building Simple Apps  
 
 ---
 
-# Module 1 — Variables and Data Types
+# Repository Structure (planned)
 
-The detailed notes, examples, tasks, and solutions for this module will be stored in the folder:
-
-01-variables-and-data-types/01-variables-and-data-types/
-
+- 01-variables-and-data-types  
+- 02-loops  
+- 03-functions  
+- 04-files  
+- 05-apis  
+- 06-json  
+- 07-pandas  
+- 08-plotting  
+- 09-apps  
