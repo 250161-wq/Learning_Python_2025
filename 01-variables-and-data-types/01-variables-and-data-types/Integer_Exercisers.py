@@ -3,19 +3,19 @@ Module 2 — Integer Variables: Practice Exercises
 Comprehensive practice with Python integer variables, from beginner to
 more professional, production-style usage.
 
-In this module I will:
+In this module I:
 - Practice how to create, modify, and use integer variables.
 - Start from very simple examples (Rank 1) and move toward
   more realistic, professional patterns (Rank 5).
-- Focus only on the integer type here. Other variable types will get
-  their own practice files later.
+- Focus only on the integer (int) type here. Floats will get
+  their own practice file in Module 3.
 
 Ranking system:
-- Rank 1  -> Beginner: basic integer declarations and operations.
-- Rank 2  -> Easy: simple math and combining integer concepts.
-- Rank 3  -> Intermediate: real calculations + transformations.
-- Rank 4  -> Advanced: integer lists, loops, and formatted output.
-- Rank 5  -> Professional: reusable integer-processing functions.
+- Rank 1  -> Beginner: very basic syntax and concepts.
+- Rank 2  -> Easy: still simple, but combining two or more concepts.
+- Rank 3  -> Intermediate: more operations and small calculations.
+- Rank 4  -> Advanced: closer to how numeric data is used in real projects.
+- Rank 5  -> Professional: clean, reusable, and readable numeric logic.
 
 Author: Peyman Miyandashti
 Date of Birth: 11/11/1983
@@ -28,142 +28,157 @@ Year: 2025
 # Simple integer creation and printing
 # ===========================================================
 
-age = 43
-wife_age = 47
-favorite_number = 11
+pey_man_age = 43          # Peyman's age
+wife_age = 47             # Arlette's age
 
 print("Rank 1 — Beginner")
-print("Your age:", age)
-print("Wife age:", wife_age)
-print("Favorite number:", favorite_number)
-print("Sum of ages:", age + wife_age)
+print("Peyman's age:", pey_man_age)
+print("Wife's age:", wife_age)
+print("Sum of ages:", pey_man_age + wife_age)
 print("-" * 50)
 
 
 # ===========================================================
 # Rank 2 — Easy
-# Basic integer math and comparisons
+# Basic calculations with your personal data
 # ===========================================================
 
-birth_year = 1983
 current_year = 2025
+pey_man_birth_year = 1983
+favorite_number = 11
 
-calculated_age = current_year - birth_year
-difference_ages = wife_age - age
-car_year = 2024
-wife_car_year = 2018
+# Age calculated from years
+calculated_age = current_year - pey_man_birth_year
+age_difference = wife_age - pey_man_age
 
 print("Rank 2 — Easy")
-print("Calculated age from year:", calculated_age)
-print("Age difference:", difference_ages)
-print("Your car age:", current_year - car_year)
-print("Wife's car age:", current_year - wife_car_year)
-print("Is Peyman older than Arlette?", age > wife_age)
+print("Current year:", current_year)
+print("Birth year:", pey_man_birth_year)
+print("Calculated age from years:", calculated_age)
+print("Favorite number:", favorite_number)
+print("Age difference (wife - Peyman):", age_difference)
+print("Age in 10 years:", pey_man_age + 10)
 print("-" * 50)
 
 
 # ===========================================================
 # Rank 3 — Intermediate
-# More operations in a single example
+# Arithmetic operations ( +, -, *, //, %, ** )
 # ===========================================================
 
-# Update integers, floor division, modulus, and derived values
-games_played = 120        # example integer
-wins = 75
-losses = games_played - wins
+# Game-related integer practice
+hours_played_per_day = 2          # example value
+days_per_week_playing = 5         # example value
 
-win_percentage = (wins * 100) // games_played   # integer percentage
-
-years_in_mexico = current_year - 2017  # example relocation year
+weekly_play_time = hours_played_per_day * days_per_week_playing
+favorite_number_squared = favorite_number ** 2
+age_divisible_by_favorite = pey_man_age % favorite_number == 0
 
 print("Rank 3 — Intermediate")
-print("Games played:", games_played)
-print("Wins:", wins)
-print("Losses:", losses)
-print("Win percentage (integer):", win_percentage, "%")
-print("Years living in Mexico:", years_in_mexico)
-print("Favorite number * age =", favorite_number * age)
+print("Weekly play time (hours):", weekly_play_time)
+print("Favorite number squared:", favorite_number_squared)
+print("Is age divisible by favorite number?:", age_divisible_by_favorite)
+
+# Integer division and remainder examples
+total_levels = 73
+levels_per_week = 4
+full_weeks_needed = total_levels // levels_per_week
+remaining_levels = total_levels % levels_per_week
+
+print("Total levels to complete:", total_levels)
+print("Full weeks needed:", full_weeks_needed)
+print("Remaining levels after full weeks:", remaining_levels)
 print("-" * 50)
 
 
 # ===========================================================
 # Rank 4 — Advanced
-# Working with lists of integers + loops + formatted output
+# Using lists/dicts of integers and simple analysis
 # ===========================================================
 
-# Example: tracking integer values about Peyman's life
-important_years = [
-    birth_year,
-    2017,            # moved to Mexico
-    car_year,
-    wife_car_year,
-    current_year
-]
+# Car years and basic "age" of each car
+kia_sportage_year = 2024
+hyundai_creta_year = 2018
 
-differences = [
-    current_year - y for y in important_years
-]
+kia_age = current_year - kia_sportage_year
+creta_age = current_year - hyundai_creta_year
+
+car_years = {
+    "Kia Sportage": kia_sportage_year,
+    "Hyundai Creta": hyundai_creta_year,
+}
 
 print("Rank 4 — Advanced")
-print("Important Years:")
-for y in important_years:
-    print(f"- {y}")
+print("Car model years:")
+for car_name, year in car_years.items():
+    car_age = current_year - year
+    print(f"- {car_name}: year {year}, age {car_age} years")
 
-print("\nYears passed since each event:")
-for d in differences:
-    print(f"- {d} years")
+# Simple integer-based stats
+family_ages = [pey_man_age, wife_age]
+total_family_age = sum(family_ages)
+average_family_age = total_family_age // len(family_ages)  # integer division
 
-# Building a formatted block with integers
-integer_profile = (
-    f"Integer Profile\n"
-    f"-----------------\n"
-    f"Age: {age}\n"
-    f"Wife Age: {wife_age}\n"
-    f"Favorite Number: {favorite_number}\n"
-    f"Car Years: {car_year}, {wife_car_year}\n"
-)
-
-print("\n", integer_profile)
+print("Total family age (Peyman + Arlette):", total_family_age)
+print("Average family age (integer):", average_family_age)
 print("-" * 50)
 
 
 # ===========================================================
 # Rank 5 — Professional
-# Function that processes and returns integer-based analytics
+# Reusable function that works with integer data
+# (age checks, remaining years, goals)
 # ===========================================================
 
-def analyze_person(
-    age: int,
-    favorite_number: int,
-    birth_year: int,
-    current_year: int
-) -> str:
+def build_integer_profile(
+    current_age: int,
+    target_graduation_age: int,
+    current_year: int,
+    start_year_degree: int,
+    credits_completed: int,
+    total_credits: int
+) -> dict:
     """
-    Return a formatted integer analytics report.
-    This simulates real-world data-processing style code.
+    Create a numeric profile for a student using only integer data.
+
+    This function is an example of how integers are used in
+    real-world projects: reusable calculations and clean logic.
     """
+    years_until_graduation = max(target_graduation_age - current_age, 0)
+    study_years_so_far = current_year - start_year_degree
+    credits_remaining = max(total_credits - credits_completed, 0)
+    percent_completed = (credits_completed * 100) // total_credits
 
-    years_lived = current_year - birth_year
-    decade = (age // 10) * 10  # find decade (40s, 50s, etc.)
-    number_squared = favorite_number * favorite_number
-
-    report = (
-        "Integer Analysis Report\n"
-        "=======================\n"
-        f"{'Age:':20} {age}\n"
-        f"{'Years lived:':20} {years_lived}\n"
-        f"{'Age decade:':20} {decade}s\n"
-        f"{'Fav number²:':20} {number_squared}\n"
-    )
-    return report
+    profile = {
+        "current_age": current_age,
+        "target_graduation_age": target_graduation_age,
+        "years_until_graduation": years_until_graduation,
+        "study_years_so_far": study_years_so_far,
+        "credits_completed": credits_completed,
+        "credits_remaining": credits_remaining,
+        "percent_completed": percent_completed,
+    }
+    return profile
 
 
 print("Rank 5 — Professional")
-result = analyze_person(
-    age=age,
-    favorite_number=favorite_number,
-    birth_year=birth_year,
+
+# Example: Peyman as a student at UPBC
+pey_man_integer_profile = build_integer_profile(
+    current_age=pey_man_age,
+    target_graduation_age=48,   # example target age for finishing the degree
     current_year=current_year,
+    start_year_degree=2023,     # example year he started at UPBC
+    credits_completed=72,       # example value
+    total_credits=300           # example value
 )
-print(result)
+
+# Nicely print the integer profile
+for key, value in pey_man_integer_profile.items():
+    print(f"{key:25}: {value}")
+
 print("-" * 50)
+
+
+
+
