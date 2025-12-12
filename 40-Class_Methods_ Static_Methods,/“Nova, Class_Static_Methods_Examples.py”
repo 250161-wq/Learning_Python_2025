@@ -1,0 +1,143 @@
+"""
+Class_Static_Methods_Examples.py
+Module 40 — Class Methods & Static Methods
+Author: Peyman Miyandashti
+Year: 2025
+
+This file contains clear and practical examples
+showing the differences between instance methods,
+class methods, and static methods.
+"""
+
+# ---------------------------------------------------------------------------
+# Example 1: Instance Method
+# ---------------------------------------------------------------------------
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def greet(self):
+        return f"Hello, my name is {self.name}"
+
+
+p = Person("Peyman")
+print(p.greet())
+
+
+# ---------------------------------------------------------------------------
+# Example 2: Class Method Accessing Class Data
+# ---------------------------------------------------------------------------
+
+class User:
+    total_users = 0
+
+    def __init__(self, username):
+        self.username = username
+        User.total_users += 1
+
+    @classmethod
+    def get_total_users(cls):
+        return cls.total_users
+
+
+u1 = User("peyman")
+u2 = User("arlette")
+
+print(User.get_total_users())
+
+
+# ---------------------------------------------------------------------------
+# Example 3: Alternative Constructor Using Class Method
+# ---------------------------------------------------------------------------
+
+class Student:
+    def __init__(self, name, grade):
+        self.name = name
+        self.grade = grade
+
+    @classmethod
+    def from_string(cls, data):
+        name, grade = data.split(",")
+        return cls(name.strip(), int(grade))
+
+
+student = Student.from_string("Arlette, 95")
+print(student.name, student.grade)
+
+
+# ---------------------------------------------------------------------------
+# Example 4: Static Method for Utility Logic
+# ---------------------------------------------------------------------------
+
+class MathUtils:
+    @staticmethod
+    def is_even(number):
+        return number % 2 == 0
+
+
+print(MathUtils.is_even(10))
+print(MathUtils.is_even(7))
+
+
+# ---------------------------------------------------------------------------
+# Example 5: Static Method vs Instance Method
+# ---------------------------------------------------------------------------
+
+class Calculator:
+    def add(self, a, b):
+        return a + b
+
+    @staticmethod
+    def multiply(a, b):
+        return a * b
+
+
+calc = Calculator()
+print(calc.add(3, 4))
+print(Calculator.multiply(3, 4))
+
+
+# ---------------------------------------------------------------------------
+# Example 6: Combining Method Types in One Class
+# ---------------------------------------------------------------------------
+
+class Product:
+    tax_rate = 0.16
+
+    def __init__(self, name, price):
+        self.name = name
+        self.price = price
+
+    def price_with_tax(self):
+        return self.price * (1 + Product.tax_rate)
+
+    @classmethod
+    def set_tax_rate(cls, new_rate):
+        cls.tax_rate = new_rate
+
+    @staticmethod
+    def is_valid_price(price):
+        return price >= 0
+
+
+item = Product("Laptop", 1000)
+print(item.price_with_tax())
+
+Product.set_tax_rate(0.20)
+print(item.price_with_tax())
+
+print(Product.is_valid_price(500))
+print(Product.is_valid_price(-10))
+
+
+# ---------------------------------------------------------------------------
+# Final Notes
+# ---------------------------------------------------------------------------
+# These examples demonstrate:
+# - instance methods for object behavior
+# - class methods for class-level logic
+# - static methods for related utilities
+#
+# Next Step:
+# Continue with Class_Static_Methods_Tasks.py
