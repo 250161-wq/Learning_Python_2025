@@ -1,0 +1,89 @@
+"""
+ID_Values_Tasks.py
+Module 46 — id() Values
+Author: Peyman Miyandashti
+Year: 2025
+
+This file contains practice exercises focused on object identity
+and the id() function in Python.
+The exercises progress from beginner to professional level.
+Do not check the solutions file until you have attempted all tasks.
+"""
+
+# ---------------------------------------------------------------------------
+# Rank 1 — Beginner
+# ---------------------------------------------------------------------------
+
+# Task 1
+# Create an integer variable and print its value and id().
+
+
+# Task 2
+# Create a string variable and print its value and id().
+
+
+# ---------------------------------------------------------------------------
+# Rank 2 — Easy
+# ---------------------------------------------------------------------------
+
+# Task 3
+# Create two lists with the same values.
+# Compare them using == and is, and print their ids.
+
+
+# Task 4
+# Assign one list to another variable.
+# Check identity and id().
+
+
+# ---------------------------------------------------------------------------
+# Rank 3 — Intermediate
+# ---------------------------------------------------------------------------
+
+# Task 5
+# Create two variables with the same small integer value.
+# Compare their ids and explain the result in comments.
+
+
+# Task 6
+# Change the value of one variable and observe how id() changes.
+
+
+# ---------------------------------------------------------------------------
+# Rank 4 — Advanced
+# ---------------------------------------------------------------------------
+
+# Task 7
+# Create a function that prints the id() of its argument
+# before and after modifying it (mutable object).
+
+
+# Task 8
+# Repeat Task 7 using an immutable object
+# and observe the difference.
+
+
+# ---------------------------------------------------------------------------
+# Rank 5 — Professional
+# ---------------------------------------------------------------------------
+
+# Task 9
+# Explain (in comments) why id() should not be used
+# for application logic.
+
+
+# Task 10
+# Explain (in comments) the correct use of `is`
+# versus `==` in professional Python code.
+
+
+# ---------------------------------------------------------------------------
+# Final Notes
+# ---------------------------------------------------------------------------
+# These tasks reinforce understanding of:
+# - object identity
+# - references
+# - Python’s memory behavior
+#
+# Next Step:
+# Continue with ID_Values_Tasks_Solutions.py
